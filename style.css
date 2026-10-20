@@ -11,6 +11,8 @@ body {
   box-shadow: 2px 2px black;
   max-width: 800px;
   padding: 12px;
+  margin-top: 3em;
+  padding-bottom: 2em;
 }
 
 h2 {
