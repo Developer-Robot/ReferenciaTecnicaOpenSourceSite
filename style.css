@@ -9,7 +9,7 @@ h2 {
 
 .photo_style_box {
   text-align: center;
-  width: 180px;
+  width: 150px;
   min-width: 0;
   box-sizing: border-box;
   
@@ -35,7 +35,7 @@ h2 {
 
 .main_article {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 100px));
   gap: 20px;
 }
 
