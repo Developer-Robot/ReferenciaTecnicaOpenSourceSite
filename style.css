@@ -1,7 +1,11 @@
 body {
   background: #F4F4F4;
   font-family: main-font, sans-serif;
-  max-width: 600px;
+  max-width: 800px;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 3px;
+  box-shadow: 2px 2px black;
 }
 
 h2 {
