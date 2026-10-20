@@ -5,11 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']], // Define $ e \( para texto inline
+        displayMath: [['$$', '$$'], ['\\[', '\\]']] // Define $$ e \[ para blocos
+      }
+    };
+  </script>
   <link rel="stylesheet" href="../../style.css">
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 </head>
   <body>
     <h2>Lei de ohm Ω</h2>
     <p>A lei de ohm é uma das mais básicas e essenciais na eletrônica.</p>
-    
+    <p>$V = I * R$</p>
   </body>
 </html>

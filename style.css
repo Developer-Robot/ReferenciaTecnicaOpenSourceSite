@@ -1,6 +1,7 @@
 body {
   background: #F4F4F4;
   font-family: main-font, sans-serif;
+  max-width: 600px;
 }
 
 h2 {
