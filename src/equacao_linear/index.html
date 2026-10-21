@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']], // Define $ e \( para texto inline
+        displayMath: [['$$', '$$'], ['\\[', '\\]']] // Define $$ e \[ para blocos
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+  <body>
+    <div class="centralized">
+      <div class="content">
+        <h2>Função do primeiro grau</h2>
+        <div id="grafico"></div>
+        <div>$↑ f(x) = 2x + 3$</div>
+      </div>
+    </div>
+    <script>
+      functionPlot({
+        target: '#grafico', // Seletor do elemento HTML
+        data: [{
+          fn: '2 * x + 3', // Função matemática a ser plotada
+            color: 'red' // Cor da linha (opcional)
+          }],
+          width: 200,
+          height: 200,
+          grid: true // Exibe a malha de fundo
+        });
+    </script>
+  </body>
+</html>
