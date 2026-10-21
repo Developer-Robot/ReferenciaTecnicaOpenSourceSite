@@ -2,17 +2,26 @@
 body {
   background: #F4F4F4;
   font-family: main-font, sans-serif;
+}
+
+.centralized {
   justify-items: center;
+}
+
+h1 {
+  margin: 0px;
 }
 
 .content {
   border: 1px solid black;
   border-radius: 3px;
-  box-shadow: 2px 2px black;
+  box-shadow: 4px 4px black;
   max-width: 1000px;
   padding: 12px;
-  margin-top: 3em;
+  margin-top: 2em;
   padding-bottom: 2em;
+  border-style: dashed;
+  background: #E6E6E6;
 }
 
 h2 {
@@ -28,17 +37,31 @@ h2 {
   
   aspect-ratio: 1 / 1;
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 0px 0px 15px 0px;
   padding: 10px;
-  background: #E4E4E4;
+  background: #FFEBA1;
   box-shadow: 0px 1px 5px black;
   margin: 0px;
 }
 
 .photo_style_box>a {
   margin-top: auto;
-  color: #00B8C9;
+  color: #095AC2;
 }
+
+.stylized_background {
+            width: 100%;
+            border: 2px solid #333;
+            
+            /* Efeito das linhas inclinadas */
+            background: repeating-linear-gradient(
+                45deg,           /* Ângulo da inclinação das linhas */
+                #F0F0F0,         /* Cor inicial */
+                #F0F0F0 15px,    /* Espessura da primeira listra */
+                #FFCC00 5px,    /* Cor de transição para a segunda listra */
+                #FFCC00 20px     /* Espessura total do ciclo */
+            );
+        }
 
 .photo_style_box>img {
   width: 60px;
